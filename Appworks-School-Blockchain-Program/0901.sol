@@ -20,6 +20,11 @@ contract Claim is Ownable {
         opening = _flag;
     }
 
+
+    constructor() {
+        opening = true;
+    }
+
     /**Problem 1: Basic Transaction */
 
     fallback() external payable {
